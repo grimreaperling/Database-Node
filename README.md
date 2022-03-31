@@ -1,6 +1,8 @@
 # Database-project
-Use express-js framework to build the web application.
+A simple database project for the curriculum design.
 ## Function
-This web application will generate a suggesting school list according to the grade inputed.
-## Backfront
-This application use mysql as a backfront.
+This web application will generate a list including all the suggested schools according to the grade the user inputs.
+## Front-end
+Use express-js framework to build the web application.
+## Back-end
+This application use mysql database as a backfront.
