@@ -4,9 +4,13 @@ html
 	head
 		title= title
 		link(rel='stylesheet', href='/stylesheets/style.css')
-	body
+	body(style="background-image: url('/images/Website.png'); background-size: 100% 100%; background-attachment: fixed;")
 		block content
-		img(src="https://www.grimreaperling.monster/Photos/Anime%20photos/莉西亚.jpg" height='250' width='250')
-		button
-		.end
-			a(href='//github.com/grimreaperling/database-project') this is a #[em simple] website.
+		footer
+			.end
+				a(href='//github.com/grimreaperling/database-project') A simple database project for the curriculum design.
+		script(src='/javascripts/snowflakes.min.js')
+		script.
+			new Snowflakes()
+
+
