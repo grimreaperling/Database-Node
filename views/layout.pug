@@ -1,16 +1,70 @@
-- var title = "Database"
 doctype html
-html
-	head
-		title= title
-		link(rel='stylesheet', href='/stylesheets/style.css')
-	body(style="background-image: url('/images/Website.png'); background-size: 100% 100%; background-attachment: fixed;")
-		block content
-		footer
-			.end
-				a(href='//github.com/grimreaperling/database-project') A simple database project for the curriculum design.
-		script(src='/javascripts/snowflakes.min.js')
-		script.
-			new Snowflakes()
-
-
+head
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+	title Home - Brand
+	meta(name='description' content='A little project for the database curriculum!')
+	link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+	link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic')
+	link(rel='stylesheet' href='assets/fonts/font-awesome.min.css')
+	link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css')
+block content
+nav.navbar.navbar-light.navbar-expand.bg-light.navigation-clean
+	.container
+		a.navbar-brand(href='#') GaoKao
+		button.navbar-toggler(data-bs-toggle='collapse' data-bs-target='#navcol-1')
+		#navcol-1.collapse.navbar-collapse
+header.text-center.text-white.masthead(style="background:url('assets/img/bg-masthead.jpg')no-repeat center center;background-size:cover;")
+	.overlay
+		.overlay
+	.container
+		.row
+			.col-xl-9.mx-auto.position-relative
+				h1.mb-5 Find Out The Suitable School for You!
+			.col-md-10.col-lg-8.col-xl-7.mx-auto.position-relative
+				form
+					.row
+						.col-12.col-md-9.mb-2.mb-md-0
+							input.form-control.form-control-lg(type='text' placeholder='Enter your grade...')
+						.col-12.col-md-3
+							button.btn.btn-primary.btn-lg(type='submit') Serach!
+		.btn-toolbar.d-xl-flex.justify-content-xl-center.align-items-xl-start(style='margin: 20px;')
+			.btn-group(role='group')
+				button.btn.btn-primary.btn-lg.active(type='button') CS
+				button.btn.btn-primary.btn-lg.active(type='button') EE
+		ol.text-start(data-aos='fade')
+			li Item 1
+			li Item 2
+			li Item 3
+			li Item 4
+section.showcase
+footer.bg-light.footer
+	.container
+		.row
+			.col-lg-6.text-center.text-lg-start.my-auto.h-100
+				ul.list-inline.mb-2
+					li.list-inline-item
+						a(href='#') About
+					li.list-inline-item
+						span &sdot;
+					li.list-inline-item
+						a(href='#') Contact
+					li.list-inline-item
+					li.list-inline-item
+					li.list-inline-item
+					li.list-inline-item
+				p.text-muted.small.mb-4.mb-lg-0 &copy; DataBase 2022. All Rights Reserved.
+			.col-lg-6.text-center.text-lg-end.my-auto.h-100
+				ul.list-inline.mb-0
+					li.list-inline-item
+						a(href='https://github.com/grimreaperling/database-project')
+							i.fa.fa-github.fa-2x.fa-fw
+					li.list-inline-item
+						a(href='#')
+							i.fa.fa-qq.fa-2x.fa-fw
+					li.list-inline-item
+						a(href='#')
+							i.fa.fa-weixin.fa-2x.fa-fw
+script(src='assets/bootstrap/js/bootstrap.min.js')
+script(src='assets/js/bs-init.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js')
